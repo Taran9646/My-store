@@ -23,7 +23,7 @@ const Homepage = async () => {
       {featuredProducts.length > 0 && (
         <ProductCarousel data={featuredProducts} />
       )}
-
+<span></span>
       <ProductList
         data={latestproduct}
         title="Featured Products"
