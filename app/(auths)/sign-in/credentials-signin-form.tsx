@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import { signInWithCredntials } from "@/lib/actions/user.actions";
-import { useSearchParams } from "next/navigation";
+// import { useSearchParams } from "next/navigation";
 const CredentialsSignINForm = () => {
     
     const [data, action] = useActionState(signInWithCredntials,{
@@ -15,8 +15,8 @@ const CredentialsSignINForm = () => {
         message: ''
     });
      
- const searchParams = useSearchParams();
- const callbackUrl = searchParams.get('callbackUrl') || '/';
+//  const searchParams = useSearchParams();
+ const callbackUrl = '/';
 
     const SignInButton = () =>{
         const {pending} = useFormStatus();
