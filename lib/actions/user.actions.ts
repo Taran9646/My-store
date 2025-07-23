@@ -34,15 +34,15 @@ export async function signInWithCredntials(prevState: unknown,
 }
 
 // sign user out
-// export async function signOutUser() {
-//    await signOut();
-// }
 export async function signOutUser() {
-  // get current users cart and delete it so it does not persist to next user
-  const currentCart = await getMyCart();
-  await prisma.cart.delete({ where: { id: currentCart?.id } });
-  await signOut();
+   await signOut();
 }
+// export async function signOutUser() {
+//   // get current users cart and delete it so it does not persist to next user
+//   const currentCart = await getMyCart();
+//   await prisma.cart.delete({ where: { id: currentCart?.id } });
+//   await signOut();
+// }
 
 // sign up user
 

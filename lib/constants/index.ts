@@ -16,7 +16,7 @@ export const signUpDefaultValues= {
 };
   
 export const shippingAddressDefaultValues = {
-    fullName: 'Rohan',
+    fullName: 'Taran',
     streetAddress: '8b Industrial area',
     city: 'Mohali',
     postalCode: '160055',
