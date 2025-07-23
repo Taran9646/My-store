@@ -29,7 +29,7 @@ const CredentialsSignINForm = () => {
 
     return ( 
     <form action={action}>
-        <input type="hidden" name="callbackUrl" value={callbackUrl} test="fine"/>
+        <input type="hidden" name="callbackUrl" value={callbackUrl} id="fijo"/>
         <div className="space-y-6">
             <div>
         <Label htmlFor="email">Email</Label>
